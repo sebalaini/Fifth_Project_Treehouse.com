@@ -1,0 +1,24 @@
+/***************
+LOGO
+***************/
+
+#logo {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+	margin: 30px auto;
+	border-radius: 100%;
+  box-shadow: 0 6px 6px #888;
+}
+
+
+@media screen and (min-width: 768px) {
+
+#logo {
+	display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: right;
+}
+
+}

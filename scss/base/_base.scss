@@ -1,0 +1,62 @@
+/***************
+GENERAL
+***************/
+
+p {
+	font-family: $primary_font;
+	font-size: $primary_size;
+	color: $black;
+	@include center;
+  padding: 10px 5%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+h1 {
+  @include center;
+  font-size: $primary_size *2;
+}
+
+h2 {
+	font-size: $primary_size *1.4;
+	@include center;
+	padding: 5px 0;
+}
+
+
+
+/***************
+EXPERIENCE
+***************/
+
+#experience {
+  clear: both;
+}
+
+#experience h2 {
+  padding: 20px;
+  margin: 25px 0 5px;
+}
+
+
+
+/***************
+CONTACT
+***************/
+
+#contact {
+	clear: both;
+}
+
+#contact h2 {
+  padding: 20px;
+}

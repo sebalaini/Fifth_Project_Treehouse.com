@@ -1,0 +1,231 @@
+/***************
+FONT
+***************/
+/***************
+COLOR
+***************/
+/***************
+GENERAL
+***************/
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #000;
+  text-align: center;
+  padding: 10px 5%; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  text-align: center;
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 5px 0; }
+
+/***************
+EXPERIENCE
+***************/
+#experience {
+  clear: both; }
+
+#experience h2 {
+  padding: 20px;
+  margin: 25px 0 5px; }
+
+/***************
+CONTACT
+***************/
+#contact {
+  clear: both; }
+
+#contact h2 {
+  padding: 20px; }
+
+/***************
+HEADER
+***************/
+.header {
+  padding: 2.5%;
+  background: -webkit-linear-gradient(#b3ffff, #fff);
+  background: -o-linear-gradient(#b3ffff, #fff);
+  background: linear-gradient(#b3ffff, #fff); }
+
+.intro {
+  padding: 40px; }
+
+@media screen and (min-width: 768px) {
+  .header {
+    background: #fff; }
+
+  .intro {
+    display: flex;
+    justify-content: flex-start; } }
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin-top: 40px; } }
+/***************
+NAV
+***************/
+.nav {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column; }
+
+.nav li {
+  margin: 15px; }
+
+.nav li a {
+  padding: 10px; }
+
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid grey; } }
+@media screen and (min-width: 1024px) {
+  .name {
+    float: left;
+    margin-top: 9px; }
+
+  .nav {
+    align-content: space-around;
+    justify-content: flex-end;
+    border-bottom: hidden; } }
+/***************
+FOOTER
+***************/
+#foot {
+  clear: both; }
+
+.foot-name {
+  float: left; }
+
+.top a {
+  float: right;
+  padding: 5px;
+  margin: 5px; }
+
+.phone a,
+.mail a {
+  padding: 10px; }
+
+.foot-nav {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  /***************
+  FOOT AND FOOT-NAV
+  ***************/
+  footer {
+    border-top: 2px solid grey; }
+
+  #foot {
+    padding: 0 2.5%; }
+
+  .foot-nav {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    margin: 20px 0 0; }
+
+  .foot-nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0; }
+
+  .foot-nav li {
+    display: inline-block;
+    margin-bottom: 10px; }
+
+  .foot-nav a {
+    font-weight: 800;
+    padding: 15px 10px; }
+
+  .top a {
+    display: none; }
+
+  .foot-name {
+    float: left;
+    margin-top: 38px;
+    padding-left: 0; }
+
+  #contact {
+    padding-bottom: 50px; } }
+@media screen and (min-width: 1024px) {
+  	/***************
+  FOOTER
+  ***************/
+  .foot-name {
+    float: left;
+    margin-top: 38px; }
+
+  footer {
+    border-top: hidden; } }
+/***************
+GENERAL
+***************/
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+/***************
+WRAPPER
+***************/
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+/***************
+GALLERY
+***************/
+.gallery {
+  padding: 5px;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+@media screen and (min-width: 768px) {
+  .gallery li {
+    flex: 0 40%;
+    margin: 2.5%; } }
+@media screen and (min-width: 1024px) {
+  .gallery li {
+    flex: 1 28.333%;
+    margin: 2.5%; } }
+.gallery p {
+  text-align: center;
+  padding-top: 20px; }
+
+/***************
+LOGO
+***************/
+#logo {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 30px auto;
+  border-radius: 100%;
+  box-shadow: 0 6px 6px #888; }
+
+@media screen and (min-width: 768px) {
+  #logo {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: right; } }
+
+/*# sourceMappingURL=main.css.map */
