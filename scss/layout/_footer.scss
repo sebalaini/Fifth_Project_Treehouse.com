@@ -4,21 +4,26 @@ FOOTER
 
 #foot {
   clear: both;
+  padding: $primary_space;
+  margin: $primary_space;
 }
 
 .foot-name {
   float: left;
+  margin-top: $secondary_space
 }
 
 .top a {
-  float: right;
-  padding: 5px;
-  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding: $primary_space;
+  margin: $primary_space;
+  margin-top: -2px;
 }
 
 .phone a,
 .mail a {
-  padding: 10px;
+  padding: $primary_space * 2;
 }
 
 .foot-nav {
@@ -28,68 +33,49 @@ FOOTER
 
 @media screen and (min-width: 768px) {
 
-/***************
-FOOT AND FOOT-NAV
-***************/
-
 footer {
-   border-top: 2px solid grey;
-}
-
-#foot {
-   padding: 0 2.5%;
+  border-top: 2px solid grey;
 }
 
 .foot-nav {
-	display: block;
-  text-align: right;
-  padding: 10px 0;
-  margin: 20px 0 0;
+	display: flex;
+  
+  justify-content: flex-end;
+  padding: $primary_space;
+  margin: $primary_space;
+  margin-top: $secondary_space;
 }
 
-.foot-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
+.foot-nav {
+
+  li {
+    margin: $primary_space * 3;
+} 
+  a {
+    padding: $primary_space * 2;
 }
 
-.foot-nav li {
-  display: inline-block;
-  margin-bottom: 10px;
 }
 
-.foot-nav a {
-  font-weight: 800;
-  padding: 15px 10px;
-}
-
-.top a {
+.top {
 	display: none;
 }
 
 .foot-name {
+	display: block;
 	float: left;
-	margin-top: 38px;
 	padding-left: 0;
+	margin-top: $secondary_space;
 }
 
 #contact {
-  padding-bottom: 50px;
+  padding-bottom: $secondary_space;
 }
 
 }
 
 
 @media screen and (min-width: 1024px) {
-
-	/***************
-FOOTER
-***************/
-
-.foot-name {
-  float: left;
-  margin-top: 38px;
-}
 
 footer {
   border-top: hidden;

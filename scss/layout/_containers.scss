@@ -39,6 +39,7 @@ GALLERY
 
 .gallery li {
 	flex: 0 40%;
+	-webkit-flex: 0 40%;
   margin: 2.5%;
 }
 
@@ -46,17 +47,17 @@ GALLERY
 
 @media screen and (min-width: 1024px) {
 
-.gallery li {
-  flex: 1 28.333%;
-  margin: 2.5%;
+.gallery {
+	li {
+  	flex: 1 28.333%;
+  	margin: 2.5%;
+}
+	p {
+  	text-align: center;
+  	padding-top: 20px;
+  	font-weight: normal;
 }
 
 }
-
-
-.gallery p {
-  text-align: center;
-  padding-top: 20px;
 }
-
 

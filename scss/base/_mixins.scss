@@ -2,3 +2,8 @@
 	text-align: center;
 }
 
+@mixin background_gradient {
+  background: -webkit-linear-gradient($light_blue, $white);
+  background: -o-linear-gradient($light_blue, $white);
+  background: linear-gradient($light_blue, $white);
+}

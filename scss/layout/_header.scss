@@ -3,15 +3,13 @@ HEADER
 ***************/
 
 .header {
-  padding: 2.5%;
-  background: -webkit-linear-gradient(#b3ffff, #fff);
-  background: -o-linear-gradient(#b3ffff, #fff);
-  background: linear-gradient(#b3ffff, #fff);
+  padding: $primary_space;
+  @include background_gradient;
 }
 
 
 .intro {
-  padding: 40px;
+  padding: $secondary_space * 2;
 }
 
 
@@ -32,7 +30,7 @@ HEADER
 @media screen and (min-width: 1024px) {
 
 .intro {
-  margin-top: 40px;
+  margin-top: $secondary_space * 2;
 }
 
 }
@@ -45,20 +43,22 @@ NAV
 
 .nav {
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: $primary_space;
+  margin: $primary_space;
   display: flex;
   flex-direction: column;
 }
 
-.nav li {
-  margin: 15px;
+.nav {
+
+  li {
+    margin: $primary_space * 3;
+} 
+  a {
+    padding: $primary_space * 2;
 }
 
-.nav li a {
-  padding: 10px;
 }
-
 
 @media screen and (min-width: 768px) {
 

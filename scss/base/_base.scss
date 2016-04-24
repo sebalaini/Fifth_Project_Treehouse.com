@@ -23,11 +23,14 @@ ul {
 
 h1 {
   @include center;
-  font-size: $primary_size *2;
+  font-family: $secondary_font;
+  font-size: $primary_size * 2;
 }
 
 h2 {
-	font-size: $primary_size *1.4;
+	font-family: $tertiary_font;
+	font-size: $primary_size * 1.4;
+	font-weight: 900;
 	@include center;
 	padding: 5px 0;
 }
@@ -39,12 +42,12 @@ EXPERIENCE
 ***************/
 
 #experience {
-  clear: both;
+  padding: $primary_space;
+  margin: $primary_space;
 }
 
 #experience h2 {
-  padding: 20px;
-  margin: 25px 0 5px;
+	@extend #experience;
 }
 
 
@@ -54,9 +57,12 @@ CONTACT
 ***************/
 
 #contact {
-	clear: both;
+  padding: $primary_space;
+  margin: $primary_space;
 }
 
 #contact h2 {
-  padding: 20px;
+	@extend #contact;
 }
+
+
