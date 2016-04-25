@@ -28,10 +28,16 @@ GALLERY
 ***************/
 
 .gallery {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 	padding: 5px;
 	margin: 5%;
-	display: flex;
 	flex-wrap: wrap;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
   justify-content: center;
 }
 
@@ -47,17 +53,11 @@ GALLERY
 
 @media screen and (min-width: 1024px) {
 
-.gallery {
-	li {
+.gallery li {
   	flex: 1 28.333%;
+  	-webkit-flex: 1 28.333%;
   	margin: 2.5%;
 }
-	p {
-  	text-align: center;
-  	padding-top: 20px;
-  	font-weight: normal;
-}
 
-}
 }
 
