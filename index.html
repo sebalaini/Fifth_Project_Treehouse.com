@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sebastiano Laini's responsive</title>
+  <title>Sebastiano Laini's responsive with sass</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -14,14 +14,15 @@
 <body>
   <div class="wrapper">
 
-    <header class="header">  
-      <H1 class="name" >Sebastiano Laini</H1>
-        <ul class="nav">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#gallery">PORTFOLIO</a></li>
-          <li><a href="#experience">EXPERIENCE</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
+<header class="header">  
+  <button type="button" class="toggle_btn"> </button> 
+    <H1 class="name" >Sebastiano Laini</H1>
+      <ul class="nav"> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#gallery">PORTFOLIO</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+     </ul>
   <img src="img/responsive-layout-profile.png" alt="profile's photo" id="logo">
     <P class="intro">Hi! i'm a front-end developer who loves responsive design and css. I'm studying a techdegree in front-end web development at Treehouse and am excited to put all my skills to use!</P>
   </header>
@@ -118,5 +119,7 @@
       </div>
     </footer>
   </div>
+    <script src="js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
