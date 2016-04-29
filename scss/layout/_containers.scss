@@ -28,35 +28,47 @@ GALLERY
 ***************/
 
 .gallery {
-	display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 	padding: 5px;
 	margin: 5%;
+	max-width: 90%;
 	flex-wrap: wrap;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 320px) {
 
 .gallery li {
-	flex: 0 40%;
-	-webkit-flex: 0 40%;
+	max-width: 90%;
+	flex: 0 90%;
+	-webkit-flex: 0 90%;
   margin: 2.5%;
 }
 
 }
 
+
+@media screen and (min-width: 768px) {
+
+.gallery li {
+	max-width: 40%;
+	flex: 0 40%;
+	-webkit-flex: 0 40%;
+}
+
+}
+
+
 @media screen and (min-width: 1024px) {
 
 .gallery li {
-  	flex: 1 28.333%;
-  	-webkit-flex: 1 28.333%;
-  	margin: 2.5%;
+	max-width: 28.333%;
+	flex: 1 28.333%;
+	-webkit-flex: 1 28.333%;
 }
 
 }
