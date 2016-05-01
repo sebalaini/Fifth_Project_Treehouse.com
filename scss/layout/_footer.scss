@@ -21,9 +21,12 @@ FOOTER
   margin-top: -2px;
 }
 
-.phone a,
-.mail a {
+.phone a {
   padding: $primary_space * 2;
+}
+
+.mail a {
+	@extend .phone;
 }
 
 .foot-nav {
@@ -31,7 +34,7 @@ FOOTER
 }
 
 
-@media screen and (min-width: 768px) {
+@include tablet {
 
 footer {
   border-top: 2px solid grey;
@@ -39,7 +42,6 @@ footer {
 
 .foot-nav {
 	display: flex;
-  
   justify-content: flex-end;
   padding: $primary_space;
   margin: $primary_space;
@@ -75,10 +77,33 @@ footer {
 }
 
 
-@media screen and (min-width: 1024px) {
+@include desktop {
 
 footer {
   border-top: hidden;
+}
+
+.top {
+	display: none;
+}
+
+.foot-nav {
+	display: flex;
+  justify-content: flex-end;
+  padding: $primary_space;
+  margin: $primary_space;
+  margin-top: $secondary_space;
+}
+
+.foot-nav {
+
+  li {
+    margin: $primary_space * 3;
+} 
+  a {
+    padding: $primary_space * 2;
+}
+
 }
 
 }

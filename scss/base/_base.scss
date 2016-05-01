@@ -28,11 +28,30 @@ h1 {
 }
 
 h2 {
+	clear: both;
 	font-family: $tertiary_font;
 	font-size: $primary_size * 1.4;
 	font-weight: 900;
 	@include center;
 	padding: 5px 0;
+}
+
+
+
+/***************
+EXPERIENCE
+***************/
+
+#gallery {
+
+@include tablet {
+	margin-top: $secondary_space * 3.5;
+	}
+
+@include desktop {
+	margin-top: $secondary_space * 4.5;
+}
+
 }
 
 
@@ -57,8 +76,7 @@ CONTACT
 ***************/
 
 #contact {
-  padding: $primary_space;
-  margin: $primary_space;
+  @extend #experience;
 }
 
 #contact h2 {

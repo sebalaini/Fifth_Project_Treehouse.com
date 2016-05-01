@@ -40,35 +40,27 @@ GALLERY
 }
 
 
-@media screen and (min-width: 320px) {
-
 .gallery li {
+	
+@include mobile {
 	max-width: 90%;
 	flex: 0 90%;
 	-webkit-flex: 0 90%;
   margin: 2.5%;
 }
 
-}
-
-
-@media screen and (min-width: 768px) {
-
-.gallery li {
+@include tablet {
 	max-width: 40%;
 	flex: 0 40%;
 	-webkit-flex: 0 40%;
+	margin: 2.5%
 }
 
-}
-
-
-@media screen and (min-width: 1024px) {
-
-.gallery li {
+@include desktop {
 	max-width: 28.333%;
 	flex: 1 28.333%;
 	-webkit-flex: 1 28.333%;
+	margin: 2.5%
 }
 
 }

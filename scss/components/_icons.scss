@@ -3,19 +3,35 @@ LOGO
 ***************/
 
 #logo {
+
+@include mobile {
   display: block;
   max-width: 200px;
   max-height: 200px;
 	margin: 30px auto;
 	border-radius: 100%;
-  box-shadow: 0 6px 6px #888;
+  box-shadow: 0 6px 6px darken( $grey, 30% );
 }
 
-
-@media screen and (min-width: 768px) {
-
-#logo {
+@include tablet {
 	display: block;
+  max-width: 200px;
+  max-height: 200px;
+	margin: 30px auto;
+	border-radius: 100%;
+  box-shadow: 0 6px 6px darken( $grey, 30% );
+  margin-left: 5%;
+  margin-right: 5%;
+  float: right;
+}
+
+@include desktop {
+	display: block;
+  max-width: 200px;
+  max-height: 200px;
+	margin: 30px auto;
+	border-radius: 100%;
+  box-shadow: 0 6px 6px darken( $grey, 30% );
   margin-left: 5%;
   margin-right: 5%;
   float: right;
