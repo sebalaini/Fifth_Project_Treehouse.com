@@ -9,8 +9,9 @@ FOOTER
 }
 
 .foot-name {
+	display: block;
   float: left;
-  margin-top: $secondary_space
+  margin-top: $secondary_space;
 }
 
 .top a {
@@ -21,12 +22,17 @@ FOOTER
   margin-top: -2px;
 }
 
-.phone a {
+
+%prim_pad {
   padding: $primary_space * 2;
 }
 
+.phone a {
+  @extend %prim_pad;
+}
+
 .mail a {
-	@extend .phone;
+  @extend %prim_pad;
 }
 
 .foot-nav {
@@ -37,7 +43,7 @@ FOOTER
 @include tablet {
 
 footer {
-  border-top: 2px solid grey;
+  border-top: 2px solid $grey;
 }
 
 .foot-nav {
@@ -61,13 +67,6 @@ footer {
 
 .top {
 	display: none;
-}
-
-.foot-name {
-	display: block;
-	float: left;
-	padding-left: 0;
-	margin-top: $secondary_space;
 }
 
 #contact {
@@ -81,29 +80,6 @@ footer {
 
 footer {
   border-top: hidden;
-}
-
-.top {
-	display: none;
-}
-
-.foot-nav {
-	display: flex;
-  justify-content: flex-end;
-  padding: $primary_space;
-  margin: $primary_space;
-  margin-top: $secondary_space;
-}
-
-.foot-nav {
-
-  li {
-    margin: $primary_space * 3;
-} 
-  a {
-    padding: $primary_space * 2;
-}
-
 }
 
 }

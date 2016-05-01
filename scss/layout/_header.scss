@@ -23,15 +23,13 @@ HEADER
 }
 
 @include tablet {
-  margin-top: $secondary_space * 3;
+  margin-top: $secondary_space * 2;
   display: flex;
   justify-content: flex-start;
 }
 
 @include desktop {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: $secondary_space * 3.5;
+  margin-top: $secondary_space * 2.5;
 }
 
 }
@@ -75,7 +73,6 @@ NAV
 @include desktop {
 
 .nav {
-  flex-direction: row;
   align-content: space-around;
   justify-content: flex-end;
   border-bottom: hidden;

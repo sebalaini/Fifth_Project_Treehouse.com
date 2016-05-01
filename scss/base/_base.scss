@@ -23,14 +23,14 @@ ul {
 
 h1 {
   @include center;
-  font-family: $secondary_font;
-  font-size: $primary_size * 2;
+  font-family: $tertiary_font;
+  font-size: $tertiary_size;
 }
 
 h2 {
 	clear: both;
-	font-family: $tertiary_font;
-	font-size: $primary_size * 1.4;
+	font-family: $secondary_font;
+	font-size: $secondary_size;
 	font-weight: 900;
 	@include center;
 	padding: 5px 0;
@@ -45,11 +45,11 @@ EXPERIENCE
 #gallery {
 
 @include tablet {
-	margin-top: $secondary_space * 3.5;
+	margin-top: $secondary_space * 2;
 	}
 
 @include desktop {
-	margin-top: $secondary_space * 4.5;
+	margin-top: $secondary_space * 3;
 }
 
 }
@@ -61,12 +61,11 @@ EXPERIENCE
 ***************/
 
 #experience {
-  padding: $primary_space;
-  margin: $primary_space;
+	@extend %prim_pad_marg;
 }
 
 #experience h2 {
-	@extend #experience;
+	@extend %prim_pad_marg;
 }
 
 
@@ -76,11 +75,11 @@ CONTACT
 ***************/
 
 #contact {
-  @extend #experience;
+  @extend %prim_pad_marg;
 }
 
 #contact h2 {
-	@extend #contact;
+	@extend %prim_pad_marg;
 }
 
 
